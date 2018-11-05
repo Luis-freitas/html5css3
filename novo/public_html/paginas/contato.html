@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+	<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<!-- favicon -->
+		<link rel="icon" href="imagens/cratos.jfif">
+		<title>Hogwarts</title>
+		<!-- SEO importante -->
+		<meta name = description content = "Formas para contato">
+		<!-- A linha abaixo "garante" o layout responisvo nos diversos dispositivos mobiles -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet"  href="../css/style.css">
+		<!-- uso do jquery via CDN do google-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<!-- estrutura principal -->
+		<div id="main">
+		<!-- cabeçalho -->
+		<header>
+			<a href=""><img src="../imagens/logo-hp.jpg" title="Harry Potter"><a/>
+
+
+		</header>
+		<!-- menu -->
+		<nav class="Menu">
+				<a href="#" class="Mobile">&#9776; Menu</a>
+			<ul>
+			
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="../sobre.html">Sobre</a></li>
+			<li><a href="#"  class="Detalhes">Curiosidades</a>
+				<ul>
+					<li><a href="harry.html">Harry Potter</a></li>
+					<li><a href="hermione.html" >Hermione</a></li>
+					<li><a href="autora.html">Autora</a></li>
+				</ul>
+			</li>			
+			<li><a href="contato.html">Contato</a></li>
+
+		</ul>
+		</nav>
+		<!-- formulario contato -->
+		<div id="contato">
+			<h1> Contato </h1>
+			<form action="formulario.php" method="POST">
+				<input type="text" name="nome"
+				placeholder="nome">
+				<input type="text" name="email"
+				placeholder="email">
+				<textarea name="mensagem" 
+				placeholder="mensagem"></textarea>
+				<input type="submit" value="Enviar">
+
+			</form>
+		</div>
+		
+		
+		<!-- rodapé -->
+		<footer>
+			<p>©2018 - Luis Freitas</p>
+		</footer>
+
+
+		</div>
+		
+<script src="js/menuresponsivo.js"></script>
+<script src="js/fixamenu.js"></script>
+<script src="js/removeclick.js"></script>
+	</body>
+	</html>
