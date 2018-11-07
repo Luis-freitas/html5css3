@@ -6,14 +6,16 @@
 
 
 	<title>Sobre - Harry Potter</title>
+	<link rel="stylesheet" href="css/style.css">
 
-	<link rel="stylesheet" href="css/style.css" >
-
+	<link rel="stylesheet" href="css/slide.css" >
+	<script type="text/javascript" src="js/script.js"></script>
 	<meta name= description content="Um pouco sobre Harry Potter">
 </head>
 <body>
+	<div id="main">
 	<header>
-			<a href=""><img src="imagens/logo-hp.jpg" title="Harry Potter"><a/>
+			<a href=""><img src="imagens/logo-hp.png" title="Harry Potter"><a/>
 
 
 		</header>
@@ -39,16 +41,52 @@
 		</ul>
 		</nav>
 		<div style="text-align: center; margin: 10%">
-		<h1>Sobre</h1>
-		<p></p>
-		</div>
-		<!-- rodapé -->
+		
+		<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="imagens/banner1.jpg" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="imagens/harry-potter123.jpeg" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="imagens/harry-potter2.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+<h1>Luis Gustavo Freitas De Oliveira</h1>
+<h4> </h4>
+
+
+		
+</div>
+
+<a href="https://github.com/Luis-freitas/html5css3/tree/master/novo/public_html" target="_blank"><img src="imagens/github.png" title="Site"></a>
+
+<!-- rodapé -->
 			<footer>
 				<p>©2018 - Luis Freitas</p>
 			</footer>
-</div>
-
-
-	
+	</div>
+	<script src="js/fixamenu.js"></script>
 </body>
 </html>

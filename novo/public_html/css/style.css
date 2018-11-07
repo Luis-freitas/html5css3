@@ -14,11 +14,15 @@ body{
 	font-family: sans-serif;
 }
 
-/**
+
 nav{
-	float: right;
+	position: fixed;
+	background-color: #fff;
+	border-radius: 10px;
+	margin-top: 10px;
+
 }
-*/
+
 nav ul{
 	list-style: none;
 	margin: 0px;
@@ -30,20 +34,20 @@ nav > ul > li{
 }
 nav > ul > li > a{
 	text-decoration: none;
-	color: #ff0000; 
+	color: #a86123; 
 	padding: 15px 15px 10px 15px;
 }
 nav ul li a{
 	text-decoration: none;
-	color: #00000;
+	color: #a86123;
 	display: block;
-	text-align: center;
+	text-align: center; 
 	background-color: #00000;
 }
 
 nav ul li a:hover{/*mouse sobre o link*/
-	color: #ffff00;
-	border-bottom: #ff0000 1px solid;
+	color: #07629e;
+	border-bottom: #07629e 1px solid;
 }
 nav li ul{
 	display: none;
@@ -51,6 +55,15 @@ nav li ul{
 }
 nav li:hover ul{
 	display: block;
+}
+/* Box-shadow */
+#main{
+	max-width: 1024px;
+	background-color: #eeeeee;
+	margin: 0 auto;
+	margin-top: 50px; 
+	border-radius: 50px;
+	box-shadow: 5px 0px 30px 5px  rgb(146, 184, 244);
 }
 .Layout{
 	height: 350px;
@@ -68,7 +81,7 @@ nav li:hover ul{
 }
 
 .DivTexto{
-	background-color: rgb(219, 54, 54);
+	background-color: rgb(146, 184, 244);
 
 
 }
@@ -103,7 +116,8 @@ footer{
 	width: 100%;
 	padding: 10px;
 	border-radius: 5px;
-	border:1px solid  #800000;
+	border:1px solid  #a86123;
+	background-color: rgb(146, 184, 244);
 	margin-bottom: 20px;
 }
 
@@ -111,19 +125,39 @@ footer{
 	width: 100%;
 	padding: 20px 10px 20px 10px;
 	border-radius: 5px;
-	border:1px solid  #800000;
+	border:1px solid  #a86123;
+	background-color: rgb(146, 184, 244);
 	margin-bottom: 20px;
 	resize: none;
 }
 
 #contato input[type=submit]{
-	background-color: #800000;
+	background-color: rgb(146, 184, 244);
 	border-radius: 5px;
-	border: 1px solid #800000;
+	border:1px solid  #a86123;
 	padding: 10px 20px 10px 20px;
 	color: #ffffff;
+	margin-bottom: 150px;
 }
 .Mobile{
 	display: none;
 }
+/* Classe usada pelo js para fixar o menu */
+.Fixar{
+	position: fixed;
+	top: 0;
+	
+}
+
+/* header */
+header img{
+	border-radius: 25px;
+	padding-top: 15px;
+	padding-left: 15px;
+
+}
+/********** Menu Responsivo ***********/
+@media screan
+
+
 
