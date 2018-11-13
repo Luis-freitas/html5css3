@@ -14,14 +14,21 @@ body{
 	font-family: sans-serif;
 }
 
+.Layout{
+	z-index: -10px;
 
+}
+img{
+	max-width: 100%;
+}
+/*
 nav{
 	position: fixed;
 	background-color: #fff;
 	border-radius: 10px;
 	margin-top: 10px;
 
-}
+}*/
 
 nav ul{
 	list-style: none;
@@ -39,7 +46,7 @@ nav > ul > li > a{
 }
 nav ul li a{
 	text-decoration: none;
-	color: #a86123;
+	color: #000000;
 	display: block;
 	text-align: center; 
 	background-color: #00000;
@@ -65,21 +72,30 @@ nav li:hover ul{
 	border-radius: 50px;
 	box-shadow: 5px 0px 30px 5px  rgb(146, 184, 244);
 }
-.Layout{
+.banner{
+	background-image: url('../banner3.jpg');
+	background-repeat: no-repeat;
+	height: 350px;
+	padding-top: 200px;
+	background-attachment: fixed;
+	max-width: 100%;
+	background-position: center;
+}
+
+.banner p{
+	text-align: center;
+	color: #e3e4e5;
+	font-size: 2.5em;
+
+}
+.banner2{
+	background-image: url('../hp.png');
 	height: 350px;
 	padding-top: 200px;
 	background-attachment: fixed;
 	background-size: cover;
 	background-position: center;
 }
-
-.Layout p{
-	text-align: center;
-	color: #e3e4e5;
-	font-size: 2.5em;
-
-}
-
 .DivTexto{
 	background-color: rgb(146, 184, 244);
 
@@ -90,6 +106,13 @@ nav li:hover ul{
 	padding:  150px 0px 150px 0px;
 	max-width: 1024px;
 	margin: 0 auto;
+}
+.texto {
+	padding: 30px 30px 30px 30px;
+	text-align: justify;
+	line-height: 30px;
+
+
 }
 .Layout{
 	max-width: 100%
@@ -157,7 +180,55 @@ header img{
 
 }
 /********** Menu Responsivo ***********/
-@media screan
+@media screen and (max-width: 480px){
+	
+	/******************** CABEÇALHO ********************/
+	header{
+	margin-bottom: 0px;
+	text-align: center;
+}
 
+header img{
+	margin-top: 0px;
+	margin-left: 0px;
+}
+#banner{
+	margin-top: 118px;
+	height: 0;
+	margin-bottom: 100px;
+}
+/**** Menu Hamburger ****/ /*AGORAA */
+   .Mobile{
+            max-width: 96.7%;
+            display: block;
+            background-color: #000;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 15px;
+        }
+        nav > ul > li{
+            float: none;
+            width: 30%;
+            
+        }				
 
-
+      
+        nav ul{
+            width: 100%;
+            display: none;
+        }
+    /*Ajustes*/
+        nav ul li a{
+            text-align: center;
+        }
+        nav ul li a:hover{
+            -webkit-transition: all 0s;
+            -o-transition: all 0s;
+            transition: all 0s;/*Remove os efeitos de transição nop mobile*/
+        }
+        /*Importante para UX(Experiência com o usuáruio) no dispositivo mobile
+        não exibir o 2º nível do menu enquanto o conteúdo não for clicado*/
+        nav li:hover ul{
+            display: none;
+        }
+}

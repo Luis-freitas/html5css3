@@ -3,7 +3,7 @@
  * @author José de Assis
  * 13/04/2017
  */
-$(document).ready(function(){
+	$(document).ready(function(){
 	//quando o objeto da classe .Mobile for clicado
 	$('.Mobile').click(function(){
 		// a linha abaixo altera o estado para nav ul (1° nivel)
