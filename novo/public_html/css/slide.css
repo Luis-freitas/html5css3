@@ -1,13 +1,15 @@
-* {box-sizing: border-box}
-body {font-family: Verdana, sans-serif; margin:0}
-.mySlides {display: none}
-img {vertical-align: middle;}
+* {box-sizing: border-box;}
+body {font-family: sans-serif; margin: 0;}
+.mySlides {display: none;}
+img {vertical-align:middle;} 
 
-/* Slideshow container */
+
+/* Código CSS do Carousel */
 .slideshow-container {
   max-width: 1000px;
   position: relative;
   margin: auto;
+  margin-top: 100px;
 }
 
 /* Next & previous buttons */
@@ -18,6 +20,7 @@ img {vertical-align: middle;}
   width: auto;
   padding: 16px;
   margin-top: -22px;
+  background-color: #10397c;
   color: white;
   font-weight: bold;
   font-size: 18px;
@@ -25,20 +28,22 @@ img {vertical-align: middle;}
   border-radius: 0 3px 3px 0;
 }
 
+.prev{
+  margin-left: -410px;
+}
+
+
 /* Position the "next button" to the right */
 .next {
   right: 0;
-  border-radius: 10px 0 0 10px;
+  border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
-.prev{
-  left: 0;
-  border-radius: 0 3px 3px 0;
-}
+
 /* Caption text */
 .text {
   color: #f2f2f2;
@@ -96,4 +101,12 @@ img {vertical-align: middle;}
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
+}
+/* Fim do CSS do Carousel */
+
+@media screen and (max-width: 480px){
+
+
+
+
 }
